@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jhordanna-agendamento",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jhordanna-agendamento",
+      "database_id": "COLOQUE_O_DATABASE_ID_AQUI"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 * * * *"]
+  }
+}
